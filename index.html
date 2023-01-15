@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholas Ribeiro's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel:"stylesheet" type="text/css" href="style.css"> -->
+    <!--Pulling in a specific font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> -->
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .font-exo {
+        font-family: 'Exo 2', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id = "bg"></canvas>
+
+    <main>
+      <header>
+        <nav>
+          <ul class="nav__links">
+            <li id="aboutclick"><a href="#aboutarea">About</a></li>
+            <li id="skillsclick"><a href="#skillsarea">Skills</a></li>
+            <li id="experiencesclick"><a href="#experiencesarea">Experiences</a></li>
+            <li id="projectsclick"><a href="#projectsarea">Projects</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="mailto:nicholas.ribeiro@yale.edu"><button>Contact</button></a>
+      </header>
+      <div class="socialline"></div>
+      <div class="icons">
+        <a href="https://www.instagram.com/nickribs1/" target="_blank" class="instagramicon">
+          <image src="instagramlogo.png" class="instagramlogo"></image>
+        </a>
+        <a href="https://github.com/nickribs1" target="_blank" class="githubicon">
+          <image src="githublogo.png" class="githublogo3"></image>
+        </a>
+        <a href="https://www.linkedin.com/in/nicholas-ribeiro1/" target="_blank" class="linkedinicon">
+          <image src="linkedinlogo.png" class="linkedinlogo"></image>
+        </a>
+      </div>
+      <div class="font-exo" id="contentofwebsite">
+        <h1 class="name">Nicholas Ribeiro</h1>
+        <p class="about">Software developer, equity analyst, and photographer</p>
+
+        <section class="aboutsection" id="aboutarea">
+            <h2 class="aboutheading">About Me</h2>
+           <div class="container about__container">
+            <div class="aboutimagearea">
+              <img src="headshot.jpg" class="aboutmeimage">
+            </div>
+            <div class="aboutcontent">
+              <div class=abouttext>
+                <p>
+                  Hello! My name is Nicholas Ribeiro and I am a full-stack developer, equity analyst, and photographer from Connecticut. I am currently a first-year at Yale University studying Computer Science and Mathematics. In my free time, I love creating fun apps and programs, some of which will be featured below. I also enjoy playing soccer, running, playing poker, and traveling!
+                </p>
+        
+                <p class="onelinerinabout">
+                  Want to check out my photography? Visit my site <!-- <a href="nicholasjribeiro.com" class="photographylink font-exo"><b>here</b></a>--> coming soon!
+                </p>
+              </div>
+              <a href="myresume.pdf" target="_blank"><button class="resumebutton">View Resume</button></a>
+            </div>
+          </div>
+        </section>
+  
+        <section class="skillssection" id="skillsarea">
+          <h2 class="skillsheading">Skills and Experiences</h2>
+          <div class="skillscontainer">
+            <p class="skillstext">
+              I have been a full-stack developer for over 2 years, and I am most comfortable using Java, Python, HTML, CSS, JavaScript (and its libraries like Three.js), Firebase, and Git. I enjoy challenges that allow me to tie in my mathematical knowledge and require me to develop innovative solutions. I have taken courses at Yale University in Data Structures & Programming Techniques as well as Discrete Mathematics and Linear Algebra, and look forward to learning more in the future!
+            </p>
+  
+            <div class="skills-chart">
+              <div id="myCanvasContainer">
+                <!-- Might want to get rid of width and height here and do it in css to make in responsive for diff browser sizes-->
+                <canvas width="450" height="450" id="myCanvas">
+                  <ul id="tags">
+                    <li><a>HTML</a></li>
+                    <li><a href="#" target="_blank">CSS</a></li>
+                    <li><a href="#" target="_blank">JavaScript</a></li>
+                    <li><a href="#" target="_blank">Java</a></li>
+                    <li><a href="#" target="_blank">Python</a></li>
+                    <li><a href="#" target="_blank">Three.js</a></li>
+                    <li><a href="#" target="_blank">React.js</a></li>
+                    <li><a href="#" target="_blank">R</a></li>
+                    <li><a href="#" target="_blank">C++</a></li>
+                    <li><a href="#" target="_blank">C</a></li>
+                    <li><a href="#" target="_blank">Firebase</a></li>
+                    <li><a href="#" target="_blank">Git</a></li>
+                    <li><a href="#" target="_blank">Racket</a></li>
+                    <li><a href="#" target="_blank">Unix</a></li>
+                  </ul>
+                </canvas>
+              </div>
+            </div>
+          </div> 
+        </section>
+
+        <section class="experiences" id="experiencesarea">
+          <div class="container">
+            <div class="card card1">
+              <h3 class="company">Milestone C</h3>
+              <h3 class="role"><i>Software Intern</i></h3>
+              <!--Above i have img instead of image, not sure if this matters-->
+              <image src="MilestoneClogo.jpg" class="companylogo" width="90px"></image>
+              <p class="date">June 2022 - August 2022</p>
+              <div class="content">
+                <p class="description">Developed Cybersecurity & Cryptography curriculum, designed Python projects, created a relational database, consulted for IoT course.</p>
+              </div>
+            </div>
+            <div class="card card2">
+              <h3 class="company">TEDxYale</h3>
+              <h3 class="role"><i>Marketing & Communications Team</i></h3>
+              <image src="tedxyalelogo.jpg" class="companylogo" width="150px"></image>
+              <p class="date">September 2022 - Present</p>
+              <div class="content">
+                <p class="description">Modernized website using sleek UX/UI design, designed + implemented ad campaigns, planned + executed TED conferences for 300+ people.</p>
+              </div>
+            </div>
+            <div class="card card3">
+              <h3 class="company">Yale Student Investment Group</h3>
+              <h3 class="role"><i>Equity Analyst</i></h3>
+              <image src="YSIGlogo.jpg" class="companylogo" width="150px"></image>
+              <p class="date">September 2022 - Present</p>
+              <div class="content">
+                <p class="description">Actively manage a ~$500,000 portfolio in public equities, conduct market research and synthesize technical data through analytical models.</p>
+              </div>
+            </div>
+            <div class="card card4">
+              <h3 class="company">Serving the Served</h3>
+              <h3 class="role"><i>Founder and Leader</i></h3>
+              <image src="ServingTheServedlogo.jpg" class="companylogo" width="100px"></image>
+              <p class="date">September 2022 - Present</p>
+              <div class="content">
+                <p class="description">Organized holiday gift bags for veterans at VA Hospitals, led fundraising and apportioned funds, directed meetings, supervised teams of volunteers.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projectsarea">
+          <h2 class="projectsheading">Projects</h2>
+          <div class="project1">
+            <div class="projectpiccontainer">
+              <image src="studybuddygraphic.jpg" class="projectpic1"></image>
+            </div>
+            <div class="project1classification">
+              <h3>Website</h3>
+            </div>
+            <div class="project1title">
+              <h3>StudyBuddy</h3>
+            </div>
+            <div class="project1description">
+              <p>A web application to easily determine group availability for meetings. Features intelligent meeting location suggestions and integrated API services.</p>
+            </div>
+            <div class="skillsused1">
+              <!--I use this weird &nbsp; for spaces, if this gives errors remove-->
+              <h4 class="skills1">React.js&nbsp;&nbsp;&nbsp;Firebase&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;Figma</h4>
+            </div>
+            <!--<a href="#" target="_blank">
+              <image src="githublogo.png" class="githublogo1"></image>
+            </a> -->
+          </div>
+          <div class="project2">
+            <div class="projectpiccontainer">
+              <image src="flappybirdgraphic.jpg" class="projectpic2"></image>
+            </div>
+            <div class="project2classification">
+              <h3>Application</h3>
+            </div>
+            <div class="project2title">
+              <h3>Flappy Bird AI</h3>
+            </div>
+            <div class="project2description">
+              <p>Using the NeuroEvolution of Augmenting Topologies (NEAT) evolutionary algorithm, an artifical neural netork perfectly plays a Flappy Bird game. Statistical data for each generation is generated.</p>
+            </div>
+            <div class="skillsused2">
+              <!--I use this weird &nbsp; for spaces, if this gives errors remove-->
+              <h4 class="skills2">Python&nbsp;&nbsp;&nbsp;PyGame&nbsp;&nbsp;&nbsp;NEAT-Python</h4>
+            </div>
+            <a href="https://github.com/nickribs1/FlappyBird" target="_blank">
+              <image src="githublogo.png" class="githublogo2"></image>
+            </a>
+          </div>
+          <div class="project3">
+            <div class="projectpiccontainer">
+              <image src="portfoliopromo.jpg" class="projectpic3"></image>
+            </div>
+            <div class="project3classification">
+              <h3>Website</h3>
+            </div>
+            <div class="project3title">
+              <h3>Personal Portfolio</h3>
+            </div>
+            <div class="project3description">
+              <p>A personal portfolio featuring interactive 3D components, transitions, and project reference links. Responsive for all screen sizes. </p>
+            </div>
+            <div class="skillsused3">
+              <!--I use this weird &nbsp; for spaces, if this gives errors remove-->
+              <h4 class="skills3">Three.js&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;GSAP&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;CSS</h4>
+            </div>
+            <a href="#" target="_blank">
+              <image src="githublogo.png" class="githublogo3"></image>
+            </a>
+          </div>
+          <div class="project4">
+            <div class="projectpiccontainer">
+              <image src="turinggraphic.jpg" class="projectpic4"></image>
+            </div>
+            <div class="project4classification">
+              <h3>Application</h3>
+            </div>
+            <div class="project4title">
+              <h3>Turing Machine Simulator</h3>
+            </div>
+            <div class="project4description">
+              <p>An abstract computational device that executes instructions of binary string alterations, mimicking Alan Turing's hypothesize Turing Machine. </p>
+            </div>
+            <div class="skillsused4">
+              <!--I use this weird &nbsp; for spaces, if this gives errors remove-->
+              <h4 class="skills4">Racket</h4>
+            </div>
+          </div>
+        </section>
+        <div class="footer">
+          <h4 class="footertext">Designed & Built by Nicholas Ribeiro</h4>
+          <h4 class="footerdate">2023</h4>
+        </div>
+    </main>
+    <div id="app"></div>
+    <script>
+      document.getElementById('aboutclick').addEventListener('click', function() {
+        document.getElementById('aboutarea').scrollIntoView({behavior: 'smooth'});
+      })
+    </script>
+    <!-- <script src="/three.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="jquery.tagcanvas.js"></script>
+    <!-- Might want to get rid of the type-->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400,
+    glare: true,
+    "max-glare": 1,
+	});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="three.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

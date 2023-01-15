@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* Might need to import this into head of html instead */
+
+/* * {
+  overflow: hidden;  
+}*/
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 4%;
+  background-color: rgba(0,0,0,.01);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(1.5px);
+  font-size: 1.1vw;
+  z-index: 99;
+}
+
+.nav__links {
+  list-style: none;
+  font-size: 1.1vw;
+  scroll-behavior: smooth;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 1.1vw;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  letter-spacing: 0.1px;
+  font-size: 1.1vw;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+  padding: 9px 25px;
+  /* background-color: rgba(85, 233, 112, 0.8); */
+  background-color: rgba(85, 114, 233, 0.2);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  border: 2px solid rgb(68, 92, 187);
+  font-size: 1.1vw;
+
+}
+
+button::before {
+  border-radius: 50px;
+  background: rgb(108, 192, 25);
+  /* background: rgb(68, 92, 187); */
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+button:hover::before {
+  width: 100%;
+  border-radius: 50px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  font-size: 1vw;
+  /*display: grid;
+  grid-template-columns: repeat(12, 1fr);*/
+}
+
+.socialline {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 1.5vw;
+  width: 1.5px;
+  height: 25vh;
+  margin-left: 5%;
+  margin-top: 72vh;
+  background-color: rgb(227, 227, 227);
+}
+
+.instagramicon {
+  position: fixed;
+  margin-top: 68vh;
+  margin-left: 1.8%;
+}
+
+.instagramlogo {
+  width: 2.2vw;
+  margin-left: 97%;
+}
+
+.linkedinlogo {
+  width: 1.6vw;
+  margin-left: 97%;
+}
+
+.linkedinicon {
+  position: fixed;
+  margin-top: 54.6vh;
+  margin-left: 2.7%;
+}
+
+.githubicon {
+  position: fixed;
+  margin-top: 61vh;
+  margin-left: 2.05%;
+}
+
+
+
+
+.name {
+  font-size: 6vw;
+  margin-top: 15%;
+  text-align: center;
+  margin-block-end: 0em;
+}
+
+.about {
+  font-size: 1.8vw;
+  text-align: center;
+  margin-bottom: 160%;
+  margin-block-start: 0.4em;
+  /*grid-column: 3 / 10;*/
+}
+
+h2 {
+  font-size: 2vw
+}
+
+.aboutsection {
+  font-size: 1vw;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  line-height: 1.4;
+}
+
+.aboutheading::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.5vw;
+  width: 8vw;
+  height: 1px;
+  margin-left: -17.5%;;
+  background-color: grey;
+}
+
+.aboutheading {
+  margin-left: 15%;
+  margin-bottom: 7%;
+}
+
+.aboutheading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1.35vw;
+  width: 18vw;
+  height: 1px;
+  margin-left: 18.5%;;
+  background-color: grey;
+}
+
+.aboutcontainer {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.aboutimagearea {
+  margin-left: -60%;
+  margin-top: 14%;
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(68, 68, 249, 0.5),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.aboutmeimage {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: all 0.3;
+ /* justify-self: center; */
+}
+
+.aboutmeimage:hover {
+  transform: rotate(0);
+}
+
+.aboutcontent {
+  margin-top: -39%;
+  margin-left: 54%;
+}
+
+.abouttext {
+  font-size: 115%;
+}
+
+.onelinerinabout {
+  margin-top: 6%;
+}
+
+.photographylink {
+  font-size: 95%;
+}
+
+.resumebutton {
+  margin-top: 6%;
+  margin-left: 0%;
+  width: 12vw;
+}
+
+@media (min-width: 851px) and (max-width: 1250px) {
+  .resumebutton {
+    margin-top: 6%;
+    margin-left: 0%;
+    width: 14vw;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 850px) {
+  .resumebutton {
+    margin-top: 6%;
+    margin-left: 0%;
+    width: 16vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .resumebutton {
+    margin-top: 6%;
+    margin-left: 0%;
+    width: 26vw;
+  }
+}
+
+.skillssection {
+  font-size: 1vw;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  line-height: 1.4;
+}
+
+.skillsheading::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.5vw;
+  width: 8.2vw;
+  height: 1px;
+  margin-left: -17.5%;;
+  background-color: grey;
+}
+
+.skillsheading {
+  margin-left: 15%;
+  margin-bottom: 7%;
+}
+
+.skillsheading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1.37vw;
+  width: 6.3vw;
+  height: 1px;
+  margin-left: 41.5%;
+  background-color: grey;
+}
+
+.skillstext {
+  font-size: 115%;
+  margin-top: 0%
+}
+
+.skillscontainer {
+  display: grid;
+  grid-template-columns: 40% 65%;
+  gap: 5%;
+}
+
+.skills-chart #myCanvasContainer {
+  position: relative;
+  height: 200%;
+  width: 100%;
+  margin-top: -23%;
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; */
+}
+
+.skills-chart #myCanvas {
+  position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-chart #myCanvasContainer li a {
+  font-size: 30px;
+}
+
+.experiences {
+  font-size: 1vw;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1vw;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top: -14%;
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+
+.container .card {
+  position: relative;
+  width: 15vw;
+  aspect-ratio: 15/17;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.container .card1 {
+  /*background: linear-gradient(225deg, rgba(114,25,29,0.5), rgba(229,74,52,0.5) 100%); */
+  background: linear-gradient(225deg, rgba(229,74,52,0.5), rgba(255,255,255,0.4) 100%);
+}
+
+.container .card2 {
+  background: linear-gradient(225deg, rgba(0,0,0,0.15), rgba(255,41,5,0.8) 200%);
+}
+
+.container .card3 {
+  background: linear-gradient(225deg, rgba(31,65,117,0.5), rgba(255,255,255,0.5) 100%);
+}
+
+.container .card4 {
+  background: linear-gradient(225deg, rgba(169,35,37,0.5), rgba(68,89,133,0.5) 100%);
+}
+
+.container .card .company {
+  position: absolute;
+  text-align: center;
+  font-size: 170%;
+  margin-top: 30%;
+}
+
+.container .card2 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 25%;
+}
+
+.container .card3 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 33%;
+}
+
+.container .card4 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 33%;
+}
+
+.container .card .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 55%;
+}
+
+.container .card2 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 120%;
+  color: rgb(197, 197, 197);
+  margin-top: 59%;
+}
+
+.container .card3 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 70%;
+}
+
+.container .card4 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 58.7%;
+}
+
+.container .card .date {
+  position: absolute;
+  text-align: center;
+  font-size: 85%;
+  color: rgb(211, 211, 211);
+  margin-top: 100%;
+}
+
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(10vh);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* make a separate .container .card:hover .company .companylogo class that doesn't translate the image, have the .container .card .content .companylogo have opacity 1 before and align properly*/
+/* need to get gradient, darkest in top right of card*/
+
+.container .card .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+.container .card1 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 6.2vw;
+}
+
+.container .card2 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 10.5vw;
+}
+
+.container .card3 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 10.5vw;
+}
+
+.container .card4 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 15vh;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 7vw;
+}
+
+.container .card:hover .companylogo {
+  transition: 0.1s linear;
+  opacity: 0;
+}
+
+.container .card:hover .company {
+  transform: translateY(-8vw); /* -16.5*/
+  transition: 0.2s ease;
+}
+
+.container .card:hover .role {
+  transform: translateY(-8.4vw);
+  transition: 0.2s ease;
+  font-size: 115%;
+}
+
+.container .card1:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container .card2:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container .card3:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container .card4:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container .card:hover .content {
+  transform: translateY(5vw);
+  opacity: 1;
+}
+
+.container .card:hover .date {
+  transform: translateY(-10.5vw);
+  transition: 0.2s ease;
+}
+
+.container .card2:hover .date {
+  transform: translateY(-9.4vw);
+}
+
+.container .card3:hover .date {
+  transform: translateY(-9.3vw);
+}
+
+.container .card4:hover .date {
+  transform: translateY(-10.1vw);
+}
+
+.container .card:hover .content .description {
+  /*margin-top: -45%; */
+} 
+
+
+
+/*add * h2 using pics of logos of places*/
+
+/* .container .card .content h3 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}*/
+
+.container .card .content p {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 300;
+}
+
+.container .card4 .content p {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 300;
+  font-size: 94%;
+}
+
+@media (min-width: 955px) and (max-width: 1388px) {
+  .container .card .content p {
+    font-size: 0.9vw;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 585px) and (max-width: 954px) {
+  .container .card .content p {
+    font-size: 0.8vw;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 585px) {
+  .container .card .content p {
+    font-size: 0.65vw;
+    font-weight: 300;
+  }
+}
+
+/*.experiences::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.projects {
+  font-size: 1vw;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30%;
+  text-align: center;
+}
+
+.projectsheading::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.5vw;
+  width: 7.4vw;
+  height: 1px;
+  margin-left: 37.5%;;
+  background-color: grey;
+}
+
+.projectsheading {
+  margin-top: 33%;
+  margin-left: -59%;
+  margin-bottom: 7%;
+}
+
+.projectsheading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -1vw;
+  width: 19.7vw;
+  height: 1px;
+  margin-left: 54.7%;;
+  background-color: grey;
+}
+
+.projectpic1{
+  position: relative;
+  width: 35vw;
+  border-radius: 15px;
+  margin-left: -40%;
+  z-index: 5;
+}
+
+.project1description {  
+  position: relative;
+  margin-left: 55%;
+  margin-top: -27%;
+  padding: 0.5vw 1.2vw 0.5vw 1vw;
+  background: rgb(41, 52, 116);
+  z-index: 90;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: -4px 4px 6px  rgb(64, 75, 136);
+}
+
+.project1title {
+  position: absolute;
+  margin-left: 51%;
+  margin-top: -21.5%;
+  font-size: 135%;
+}
+
+.project1classification {
+  position: absolute;
+  margin-left: 56%;
+  margin-top: -22.5%;
+  font-size: 85%;
+  color: rgba(187, 187, 187, 0.4);
+}
+
+.skills1 {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 63%;
+  font-size: 90%;
+  margin-top: 2.5%;
+}
+
+/* .githublogo1 {
+  width: 2vw;
+  margin-left: 97%;
+} */
+
+/* Project 2 */
+
+.projectpic2{
+  position: relative;
+  width: 35vw;
+  height: 30vw;
+  border-radius: 15px;
+  margin-left: 41%;
+  z-index: 5;
+  margin-top: 20%;
+}
+
+.project2description {  
+  position: relative;
+  margin-left: 0%;
+  margin-right: 54.5%;
+  margin-top: -32%;
+  padding: 0.5vw 1.2vw 0.5vw 1vw;
+  background: rgb(41, 52, 116);
+  z-index: 90;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 4px 4px 6px  rgb(64, 75, 136);
+}
+
+.project2title {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -24%;
+  font-size: 135%;
+}
+
+.project2classification {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -25%;
+  font-size: 85%;
+  color: rgba(187, 187, 187, 0.4);
+}
+
+.skills2 {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 0.2%;
+  font-size: 90%;
+  text-align: left;
+  margin-top: 2.5%;
+}
+
+.githublogo2 {
+  width: 2vw;
+  margin-left: -97.5%;
+}
+
+/* Project 3 */
+
+.projectpic3{
+  position: relative;
+  width: 35vw;
+  border-radius: 15px;
+  margin-left: -40%;
+  z-index: 5;
+  margin-top: 20%;
+}
+
+.project3description {  
+  position: relative;
+  margin-left: 56%;
+  margin-top: -27%;
+  padding: 0.5vw 1.2vw 0.5vw 1vw;
+  background: rgb(41, 52, 116);
+  z-index: 9;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: -4px 4px 6px  rgb(64, 75, 136);
+}
+
+.project3title {
+  position: absolute;
+  margin-left: 46.6%;
+  margin-top: -21.5%;
+  font-size: 135%;
+}
+
+.project3classification {
+  position: absolute;
+  margin-left: 56%;
+  margin-top: -22.5%;
+  font-size: 85%;
+  color: rgba(187, 187, 187, 0.4);
+}
+
+.skills3 {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 66%;
+  font-size: 90%;
+  margin-top: 2.5%;
+}
+
+.githublogo3 {
+  width: 2vw;
+  margin-left: 97%;
+}
+
+/* Project 4 */
+
+.projectpic4{
+  position: relative;
+  width: 35vw;
+
+  border-radius: 15px;
+  margin-left: 41%;
+  z-index: 5;
+  margin-top: 20%;
+}
+
+.project4description {  
+  position: relative;
+  margin-left: 0%;
+  margin-right: 54.5%;
+  margin-top: -26%;
+  padding: 0.5vw 1.2vw 0.5vw 1vw;
+  background: rgb(41, 52, 116);
+  z-index: 90;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 4px 4px 6px  rgb(64, 75, 136);
+}
+
+.project4title {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -21%;
+  font-size: 135%;
+}
+
+.project4classification {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -22.1%;
+  font-size: 85%;
+  color: rgba(187, 187, 187, 0.4);
+}
+
+.skills4 {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 0.2%;
+  font-size: 90%;
+  text-align: left;
+  margin-top: 2.5%;
+}
+
+.aboutscroll {
+  margin-bottom: 110%;
+}
+
+.skillsscroll {
+  margin-top: -12%;
+  margin-bottom: 30%;
+}
+
+.projectsscroll {
+  margin-top: -12%;
+  margin-bottom: 30%;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.footer {
+  height: 60px;
+  margin-left: 35%;
+  margin-right: 35%;
+  background: rgba(11, 19, 62, 0.8);
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  line-height: 0.35;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(34, 44, 101);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 90%;
+}
