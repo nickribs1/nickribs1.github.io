@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-/* Might need to import this into head of html instead */
-
-/* * {
-  overflow: hidden;  
-}*/
 
 li, a, button {
   font-family: "Montserrat", sans-serif;
