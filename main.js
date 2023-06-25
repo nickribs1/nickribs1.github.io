@@ -229,7 +229,6 @@ function moveCameraTilt() {
     camera.position.z = 50 + (30 * Math.sin(((((distScrolled / (document.documentElement.scrollHeight - innerHeight)) * 5) * (Math.PI / 2)) * -1) + Math.PI))
     camera.rotation.x = ((-1 * distScrolled) / (document.documentElement.scrollHeight - innerHeight)) * 7
     //console.log(camera.position.z)
-    console.log(camera.rotation.x)
     //console.log(Math.sin(((distScrolled * (10 / 3)) * (Math.PI / 2)) + ((3 * Math.PI) / 2)))
   }
 
@@ -249,11 +248,6 @@ function moveCameraTilt() {
     camera.position.y = 320
   }
 
-
-  console.log((-1 * distScrolled) / (document.documentElement.scrollHeight - innerHeight));
-  console.log("Window Height: ", innerHeight);
-  //console.log("Distance Scrolled: ", distScrolled)
-  console.log("Page height: ", document.documentElement.scrollHeight);
 }
 
 document.body.onscroll = moveCameraTilt
