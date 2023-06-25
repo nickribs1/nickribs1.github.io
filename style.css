@@ -284,7 +284,7 @@ h2 {
   font-size: 1vw;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 20%;
+  margin-bottom: 21%;
   line-height: 1.4;
 }
 
@@ -403,7 +403,7 @@ h2 {
 }
 
 .container .card2 {
-  background: linear-gradient(225deg, rgba(0,0,0,0.15), rgba(255,41,5,0.8) 200%);
+  background: linear-gradient(225deg, rgba(26,54,115,255), rgba(255,255,255,0.8) 200%);
 }
 
 .container .card3 {
@@ -425,7 +425,7 @@ h2 {
   position: absolute;
   text-align: center;
   font-size: 150%;
-  margin-top: 25%;
+  margin-top: 30%;
 }
 
 .container .card3 .company {
@@ -439,7 +439,7 @@ h2 {
   position: absolute;
   text-align: center;
   font-size: 150%;
-  margin-top: 33%;
+  margin-top: 30%;
 }
 
 .container .card .role {
@@ -453,9 +453,9 @@ h2 {
 .container .card2 .role {
   position: absolute;
   text-align: center;
-  font-size: 120%;
+  font-size: 115%;
   color: rgb(197, 197, 197);
-  margin-top: 59%;
+  margin-top: 55%;
 }
 
 .container .card3 .role {
@@ -471,7 +471,7 @@ h2 {
   text-align: center;
   font-size: 125%;
   color: rgb(197, 197, 197);
-  margin-top: 58.7%;
+  margin-top: 55%;
 }
 
 .container .card .date {
@@ -520,7 +520,7 @@ h2 {
   margin-top: -50%;
   pointer-events: none;
   border-radius: 1vw;
-  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  box-shadow: -0.45vw -0.45vw rgba(0, 0, 0, 0.4);
   width: 10.5vw;
 }
 
@@ -543,7 +543,7 @@ h2 {
   pointer-events: none;
   border-radius: 15vh;
   box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
-  width: 7vw;
+  width: 6.5vw;
 }
 
 .container .card:hover .companylogo {
@@ -596,12 +596,12 @@ h2 {
 }
 
 .container .card:hover .date {
-  transform: translateY(-10.5vw);
+  transform: translateY(-10.3vw);
   transition: 0.2s ease;
 }
 
 .container .card2:hover .date {
-  transform: translateY(-9.4vw);
+  transform: translateY(-10.3vw);
 }
 
 .container .card3:hover .date {
@@ -609,7 +609,7 @@ h2 {
 }
 
 .container .card4:hover .date {
-  transform: translateY(-10.1vw);
+  transform: translateY(-10.3vw);
 }
 
 .container .card:hover .content .description {
@@ -673,7 +673,7 @@ h2 {
   font-size: 1vw;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 30%;
+  margin-bottom: 25%;
   text-align: center;
 }
 
@@ -792,6 +792,10 @@ h2 {
   color: rgba(187, 187, 187, 0.4);
 }
 
+.project2text {
+  margin-left: 1%;
+}
+
 .skills2 {
   font-family: 'Roboto Mono', monospace;
   margin-left: 0.2%;
@@ -887,6 +891,10 @@ h2 {
   font-size: 135%;
 }
 
+.project4text {
+  margin-left: 1%;
+}
+
 .project4classification {
   position: absolute;
   margin-left: 0%;
@@ -901,6 +909,56 @@ h2 {
   font-size: 90%;
   text-align: left;
   margin-top: 2.5%;
+}
+
+/* Project 5 */
+
+.projectpic5{
+  position: relative;
+  width: 35vw;
+  border-radius: 15px;
+  margin-left: -40%;
+  z-index: 5;
+  margin-top: 20%;
+}
+
+.project5description {  
+  position: relative;
+  margin-left: 55%;
+  margin-top: -27%;
+  padding: 0.5vw 1.2vw 0.5vw 1vw;
+  background: rgb(41, 52, 116);
+  z-index: 9;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: -4px 4px 6px  rgb(64, 75, 136);
+}
+
+.project5title {
+  position: absolute;
+  margin-left: 41%;
+  margin-top: -21.5%;
+  font-size: 135%;
+}
+
+.project5classification {
+  position: absolute;
+  margin-left: 54.5%;
+  margin-top: -22.5%;
+  font-size: 85%;
+  color: rgba(187, 187, 187, 0.4);
+}
+
+.skills5 {
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 94%;
+  font-size: 90%;
+  margin-top: 2.5%;
+}
+
+.githublogo5 {
+  width: 2vw;
+  margin-left: 97%;
 }
 
 .aboutscroll {
