@@ -96,8 +96,6 @@ main {
   width: 100%;
   margin: 0px auto;
   font-size: 1vw;
-  /*display: grid;
-  grid-template-columns: repeat(12, 1fr);*/
 }
 
 .socialline {
