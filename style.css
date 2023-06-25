@@ -453,9 +453,9 @@ h2 {
 .container .card2 .role {
   position: absolute;
   text-align: center;
-  font-size: 115%;
+  font-size: 125%;
   color: rgb(197, 197, 197);
-  margin-top: 55%;
+  margin-top: 70%;
 }
 
 .container .card3 .role {
@@ -601,7 +601,7 @@ h2 {
 }
 
 .container .card2:hover .date {
-  transform: translateY(-10.3vw);
+  transform: translateY(-9.3vw);
 }
 
 .container .card3:hover .date {
