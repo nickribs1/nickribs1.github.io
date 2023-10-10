@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
 
+    <script>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_eIjA5gHdtfT1A463jEB7yoUNbnOYjPbrAcCsx9qvWIO',{api_host:'https://app.posthog.com'})
+    </script>
+
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> -->
     <style>
       body {
@@ -81,7 +86,7 @@
           <h2 class="skillsheading">Skills and Experiences</h2>
           <div class="skillscontainer">
             <p class="skillstext">
-              I have been a full-stack developer for over 2 years, and I am most comfortable using Python, R, Java, C++, React.js, and Firebase. I enjoy challenges that allow me to tie in my mathematical knowledge and require me to develop innovative solutions. I have taken courses at Yale University in Algorithms, Data Structures & Programming Techniques, Discrete Mathematics, and Linear Algebra, and look forward to learning more in the future!
+              I have been a full-stack developer for over 3 years, and I am most comfortable using Python, R, Java, C++, React.js, and Firebase. I enjoy challenges that allow me to tie in my mathematical knowledge and require me to develop innovative solutions. I have taken courses at Yale University in Algorithms, Data Structures & Programming Techniques, Game Theory, Probability Theory, Discrete Mathematics, and Linear Algebra, and look forward to learning more in the future!
             </p>
   
             <div class="skills-chart">
@@ -90,7 +95,6 @@
                 <canvas width="450" height="450" id="myCanvas">
                   <ul id="tags">
                     <li><a>HTML</a></li>
-                    <li><a href="#" target="_blank">CSS</a></li>
                     <li><a href="#" target="_blank">JavaScript</a></li>
                     <li><a href="#" target="_blank">Java</a></li>
                     <li><a href="#" target="_blank">Python</a></li>
@@ -104,6 +108,10 @@
                     <li><a href="#" target="_blank">Racket</a></li>
                     <li><a href="#" target="_blank">Unix</a></li>
                     <li><a href="#" target="_blank">SQL</a></li>
+                    <li><a href="#" target="_blank">TypeScript</a></li>
+                    <li><a href="#" target="_blank">Pandas</a></li>
+                    <li><a href="#" target="_blank">NumPy</a></li>
+                    <li><a href="#" target="_blank">Tailwind</a></li>
                   </ul>
                 </canvas>
               </div>
@@ -112,56 +120,79 @@
         </section>
 
         <section class="experiences" id="experiencesarea">
-          <div class="container">
-            <div class="card card2">
-              <h3 class="company">Elevance Health</h3>
-              <h3 class="role"><i>Advanced Analytics Intern</i></h3>
-              <image src="elevancelogo.jpg" class="companylogo" width="150px"></image>
-              <p class="date">June 2023 - August 2023</p>
-              <div class="content">
-                <p class="description">Developed analytical tools with SQL and Tableau for 11+ million Medicaid members, wrote Python scripts to automate statistical queries.</p>
+          <div>
+            <div class="container">
+              <div class="card card2">
+                <h3 class="company">Elevance Health</h3>
+                <h3 class="role"><i>Advanced Analytics Intern</i></h3>
+                <image src="elevancelogo.jpg" class="companylogo" width="150px"></image>
+                <p class="date">June 2023 - August 2023</p>
+                <div class="content">
+                  <p class="description">Developed Snowflake analytical tools using Python for 14+ million Medicaid members, implemented ML/ regression models for cancer detection tool.</p>
+                </div>
               </div>
+              <div class="card card1">
+                <h3 class="company">Milestone C</h3>
+                <h3 class="role"><i>Software Intern</i></h3>
+                <image src="MilestoneClogo.jpg" class="companylogo" width="90px"></image>
+                <p class="date">June 2022 - August 2022</p>
+                <div class="content">
+                  <p class="description">Developed Cybersecurity & Cryptography curriculum, designed Python projects, created a relational database, consulted for IoT course.</p>
+                </div>
+              </div>
+              <!-- <div class="card card2">
+                <h3 class="company">TEDxYale</h3>
+                <h3 class="role"><i>Marketing & Communications Team</i></h3>
+                <image src="tedxyalelogo.jpg" class="companylogo" width="150px"></image>
+                <p class="date">September 2022 - Present</p>
+                <div class="content">
+                  <p class="description">Modernized website using sleek UX/UI design, designed + implemented ad campaigns, planned + executed TED conferences for 300+ people.</p>
+                </div>
+              </div> -->
+              <div class="card card3">
+                <h3 class="company">Yale Student Investment Group</h3>
+                <h3 class="role"><i>Equity Analyst</i></h3>
+                <image src="YSIGlogo.jpg" class="companylogo" width="150px"></image>
+                <p class="date">September 2022 - Present</p>
+                <div class="content">
+                  <p class="description">Actively manage a ~$500,000 portfolio in public equities, conduct market research and synthesize technical data through analytical models.</p>
+                </div>
+              </div>
+              <div class="card card5">
+                <h3 class="company">Yale Computer Society</h3>
+                <h3 class="role"><i>Software Team Lead</i></h3>
+                <image src="ycslogo.jpg" class="companylogo" width="100px"></image>
+                <p class="date">September 2022 - Present</p>
+                <div class="content">
+                  <p class="description">Direct 12+ developer team in development of app to determine optimal group availability, spearheaded integration effort merging React.js components with Firebase backend.</p>
+                </div>
             </div>
-            <div class="card card1">
-              <h3 class="company">Milestone C</h3>
-              <h3 class="role"><i>Software Intern</i></h3>
-              <!--Above i have img instead of image, not sure if this matters-->
-              <image src="MilestoneClogo.jpg" class="companylogo" width="90px"></image>
-              <p class="date">June 2022 - August 2022</p>
-              <div class="content">
-                <p class="description">Developed Cybersecurity & Cryptography curriculum, designed Python projects, created a relational database, consulted for IoT course.</p>
+
+            <div class="container1">
+              <div class="card card2">
+                <h3 class="company">YaleNLP</h3>
+                <h3 class="role"><i>AI Researcher</i></h3>
+                <image src="seaslogo.png" class="companylogo" width="50px"></image>
+                <p class="date">August 2023 - Present</p>
+                <div class="content">
+                  <p class="description">Utilized iterative prompting and multi-agent collaboration methods to develop few-shot learning models for LLM financial data analysis.</p>
+                </div>
               </div>
-            </div>
-            <!-- <div class="card card2">
-              <h3 class="company">TEDxYale</h3>
-              <h3 class="role"><i>Marketing & Communications Team</i></h3>
-              <image src="tedxyalelogo.jpg" class="companylogo" width="150px"></image>
-              <p class="date">September 2022 - Present</p>
-              <div class="content">
-                <p class="description">Modernized website using sleek UX/UI design, designed + implemented ad campaigns, planned + executed TED conferences for 300+ people.</p>
-              </div>
-            </div> -->
-            <div class="card card3">
-              <h3 class="company">Yale Student Investment Group</h3>
-              <h3 class="role"><i>Equity Analyst</i></h3>
-              <image src="YSIGlogo.jpg" class="companylogo" width="150px"></image>
-              <p class="date">September 2022 - Present</p>
-              <div class="content">
-                <p class="description">Actively manage a ~$500,000 portfolio in public equities, conduct market research and synthesize technical data through analytical models.</p>
-              </div>
-            </div>
-            <div class="card card4">
-              <h3 class="company">Serving the Served</h3>
-              <h3 class="role"><i>Founder and Leader</i></h3>
-              <image src="ServingTheServedlogo.jpg" class="companylogo" width="100px"></image>
-              <p class="date">October 2019 - February 2022</p>
-              <div class="content">
-                <p class="description">Organized holiday gift bags for veterans at VA Hospitals, led fundraising and apportioned funds, directed meetings, supervised teams of volunteers.</p>
+              <div class="card card4">
+                <h3 class="company">Serving the Served</h3>
+                <h3 class="role"><i>Founder and Leader</i></h3>
+                <image src="ServingTheServedlogo.jpg" class="companylogo" width="100px"></image>
+                <p class="date">October 2019 - February 2022</p>
+                <div class="content">
+                  <p class="description">Organized holiday gift bags for veterans at VA Hospitals, led fundraising and apportioned funds, directed meetings, supervised teams of volunteers.</p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
+        </section>
+        
+        
         <section class="projects" id="projectsarea">
           <h2 class="projectsheading">Projects</h2>
           <div class="project1">
@@ -295,5 +326,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="three.js"></script>
     <script src="main.js"></script>
+
+    <script>
+      posthog.capture('Page View', { page_url: window.location.href });
+    </script>
+  
   </body>
 </html>

@@ -372,7 +372,20 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
-  margin-top: -14%;
+  margin-top: -16%;
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top: 1%;
   /* margin: 0;
   padding: 0;
   box-sizing: border-box; */
@@ -395,7 +408,29 @@ h2 {
   backdrop-filter: blur(5px);
 }
 
+.container1 .card {
+  position: relative;
+  width: 15vw;
+  aspect-ratio: 15/17;
+  margin: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
 .container .card1 {
+  /*background: linear-gradient(225deg, rgba(114,25,29,0.5), rgba(229,74,52,0.5) 100%); */
+  background: linear-gradient(225deg, rgba(229,74,52,0.5), rgba(255,255,255,0.4) 100%);
+}
+
+.container1 .card1 {
   /*background: linear-gradient(225deg, rgba(114,25,29,0.5), rgba(229,74,52,0.5) 100%); */
   background: linear-gradient(225deg, rgba(229,74,52,0.5), rgba(255,255,255,0.4) 100%);
 }
@@ -404,7 +439,19 @@ h2 {
   background: linear-gradient(225deg, rgba(26,54,115,255), rgba(255,255,255,0.8) 200%);
 }
 
+.container1 .card2 {
+  background: linear-gradient(225deg, rgba(45,88,219,255), rgba(227,216,59,255) 180%);
+}
+
 .container .card3 {
+  background: linear-gradient(225deg, rgba(31,65,117,0.5), rgba(255,255,255,0.5) 100%);
+}
+
+.container .card5 {
+  background: linear-gradient(225deg, rgba(253,89,96,255), rgba(255,255,255,0.5) 100%);
+}
+
+.container1 .card3 {
   background: linear-gradient(225deg, rgba(31,65,117,0.5), rgba(255,255,255,0.5) 100%);
 }
 
@@ -412,7 +459,18 @@ h2 {
   background: linear-gradient(225deg, rgba(169,35,37,0.5), rgba(68,89,133,0.5) 100%);
 }
 
+.container1 .card4 {
+  background: linear-gradient(225deg, rgba(169,35,37,0.5), rgba(68,89,133,0.5) 100%);
+}
+
 .container .card .company {
+  position: absolute;
+  text-align: center;
+  font-size: 170%;
+  margin-top: 30%;
+}
+
+.container1 .card .company {
   position: absolute;
   text-align: center;
   font-size: 170%;
@@ -426,6 +484,13 @@ h2 {
   margin-top: 30%;
 }
 
+.container1 .card2 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 30%;
+}
+
 .container .card3 .company {
   position: absolute;
   text-align: center;
@@ -433,7 +498,29 @@ h2 {
   margin-top: 33%;
 }
 
+.container .card5 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 33%;
+}
+
+.container1 .card3 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 33%;
+}
+
+
 .container .card4 .company {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 30%;
+}
+
+.container1 .card4 .company {
   position: absolute;
   text-align: center;
   font-size: 150%;
@@ -448,12 +535,28 @@ h2 {
   margin-top: 55%;
 }
 
-.container .card2 .role {
+.container1 .card .role {
   position: absolute;
   text-align: center;
   font-size: 125%;
   color: rgb(197, 197, 197);
-  margin-top: 65%;
+  margin-top: 55%;
+}
+
+.container .card2 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 120%;
+  color: rgb(197, 197, 197);
+  margin-top: 55%;
+}
+
+.container1 .card2 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 120%;
+  color: rgb(197, 197, 197);
+  margin-top: 55%;
 }
 
 .container .card3 .role {
@@ -464,7 +567,32 @@ h2 {
   margin-top: 70%;
 }
 
+.container .card5 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 70%;
+}
+
+.container1 .card3 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 70%;
+}
+
+
 .container .card4 .role {
+  position: absolute;
+  text-align: center;
+  font-size: 125%;
+  color: rgb(197, 197, 197);
+  margin-top: 55%;
+}
+
+.container1 .card4 .role {
   position: absolute;
   text-align: center;
   font-size: 125%;
@@ -488,6 +616,21 @@ h2 {
   transition: 0.5s;
 }
 
+.container1 .card .date {
+  position: absolute;
+  text-align: center;
+  font-size: 85%;
+  color: rgb(211, 211, 211);
+  margin-top: 100%;
+}
+
+.container1 .card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(10vh);
+  opacity: 0;
+  transition: 0.5s;
+}
 /* make a separate .container .card:hover .company .companylogo class that doesn't translate the image, have the .container .card .content .companylogo have opacity 1 before and align properly*/
 /* need to get gradient, darkest in top right of card*/
 
@@ -511,6 +654,26 @@ h2 {
   width: 6.2vw;
 }
 
+.container1 .card .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+.container1 .card1 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 6.2vw;
+}
+
 .container .card2 .companylogo {
   /*margin-left: 118%;
   margin-top: -77%; */
@@ -522,7 +685,40 @@ h2 {
   width: 10.5vw;
 }
 
+.container1 .card2 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.45vw -0.45vw rgba(0, 0, 0, 0);
+  width: 6vw;
+}
+
 .container .card3 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 10.5vw;
+}
+
+.container .card5 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 1vw;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 6vw;
+}
+
+.container1 .card3 .companylogo {
   /*margin-left: 118%;
   margin-top: -77%; */
   position: absolute;
@@ -544,6 +740,16 @@ h2 {
   width: 6.5vw;
 }
 
+.container1 .card4 .companylogo {
+  /*margin-left: 118%;
+  margin-top: -77%; */
+  position: absolute;
+  margin-top: -50%;
+  pointer-events: none;
+  border-radius: 15vh;
+  box-shadow: -0.35vw -0.35vw rgba(0, 0, 0, 0.4);
+  width: 6.5vw;
+}
 .container .card:hover .companylogo {
   transition: 0.1s linear;
   opacity: 0;
@@ -574,6 +780,37 @@ h2 {
   transition: 0.2s ease;
 }
 
+
+.container1 .card:hover .companylogo {
+  transition: 0.1s linear;
+  opacity: 0;
+}
+
+.container1 .card:hover .company {
+  transform: translateY(-8vw); /* -16.5*/
+  transition: 0.2s ease;
+}
+
+.container1 .card:hover .role {
+  transform: translateY(-8.4vw);
+  transition: 0.2s ease;
+  font-size: 115%;
+}
+
+.container1 .card1:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container1 .card2:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
 .container .card3:hover .content {
   transform: translateY(-10vw);
   margin-top: -15%;
@@ -581,7 +818,28 @@ h2 {
   transition: 0.2s ease;
 }
 
+.container .card5:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container1 .card3:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
 .container .card4:hover .content {
+  transform: translateY(-10vw);
+  margin-top: -15%;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.container1 .card4:hover .content {
   transform: translateY(-10vw);
   margin-top: -15%;
   opacity: 1;
@@ -599,14 +857,42 @@ h2 {
 }
 
 .container .card2:hover .date {
-  transform: translateY(-9.1vw);
+  transform: translateY(-10.3vw);
+}
+
+
+
+.container1 .card:hover .content {
+  transform: translateY(5vw);
+  opacity: 1;
+}
+
+.container1 .card:hover .date {
+  transform: translateY(-10.3vw);
+  transition: 0.2s ease;
+}
+
+.container1 .card2:hover .date {
+  transform: translateY(-10.3vw);
 }
 
 .container .card3:hover .date {
   transform: translateY(-9.3vw);
 }
 
+.container .card5:hover .date {
+  transform: translateY(-9.3vw);
+}
+
+.container1 .card3:hover .date {
+  transform: translateY(-9.3vw);
+}
+
 .container .card4:hover .date {
+  transform: translateY(-10.3vw);
+}
+
+.container1 .card4:hover .date {
   transform: translateY(-10.3vw);
 }
 
@@ -620,6 +906,12 @@ h2 {
   font-weight: 300;
 }
 
+.container1 .card .content p {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 300;
+}
+
 .container .card4 .content p {
   font-size: 1vw;
   color: #fff;
@@ -627,8 +919,20 @@ h2 {
   font-size: 94%;
 }
 
+.container1 .card4 .content p {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 300;
+  font-size: 94%;
+}
+
+
 @media (min-width: 955px) and (max-width: 1388px) {
   .container .card .content p {
+    font-size: 0.9vw;
+    font-weight: 300;
+  }
+  .container1 .card .content p {
     font-size: 0.9vw;
     font-weight: 300;
   }
@@ -639,10 +943,18 @@ h2 {
     font-size: 0.8vw;
     font-weight: 300;
   }
+  .container1 .card .content p {
+    font-size: 0.8vw;
+    font-weight: 300;
+  }
 }
 
 @media (max-width: 585px) {
   .container .card .content p {
+    font-size: 0.65vw;
+    font-weight: 300;
+  }
+  .container1 .card .content p {
     font-size: 0.65vw;
     font-weight: 300;
   }
@@ -677,7 +989,7 @@ h2 {
 }
 
 .projectsheading {
-  margin-top: 33%;
+  margin-top: 27%;
   margin-left: -59%;
   margin-bottom: 7%;
 }
